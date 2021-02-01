@@ -1,6 +1,6 @@
 package com.syntheticfeelingss.testApplication.Controller;
 
-import com.syntheticfeelingss.testApplication.Domain.Contact;
+import com.syntheticfeelingss.testApplication.DTO.ContactDTO;
 import com.syntheticfeelingss.testApplication.Service.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,12 +15,12 @@ public class ContactController {
     private ContactService contactService;
 
     @GetMapping
-    public List<Contact> getContactByName(@RequestParam String nameFilter) {
+    public List<ContactDTO> getContactByName(@RequestParam String nameFilter) {
         return contactService.findByName(nameFilter);
     }
 
     @PostMapping("/{createContact}")
-    public void addContact(@RequestParam String name){
+    public void addContact(@RequestParam String name) {
         contactService.createContact(name);
 
     }

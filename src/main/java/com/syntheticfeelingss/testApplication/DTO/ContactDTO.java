@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.UUID;
 
 @Data
-public class ContactReadDTO {
-    private UUID id;
+public class ContactDTO {
+    private Long id;
     private String name;
 }

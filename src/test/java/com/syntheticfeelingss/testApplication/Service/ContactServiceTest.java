@@ -1,6 +1,7 @@
 package com.syntheticfeelingss.testApplication.Service;
 
 
+import com.syntheticfeelingss.testApplication.DTO.ContactDTO;
 import com.syntheticfeelingss.testApplication.Domain.Contact;
 import com.syntheticfeelingss.testApplication.Repository.ContactRepository;
 import org.assertj.core.api.Assertions;
@@ -42,9 +43,9 @@ public class ContactServiceTest {
         c.setName("Matthew");
 
         Contact create = contactService.createContact(c.getName());
-        List<Contact> read = contactService.findByName("Matthew");
+        List<ContactDTO> read = contactService.findByName("Matthew");
 
-        List<Contact> contact = contactService.findByName(read.get(0).getName());
+        List<ContactDTO> contact = contactService.findByName(read.get(0).getName());
         Assertions.assertThat(read).isEqualTo(contact);
 
     }
