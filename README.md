@@ -10,9 +10,9 @@
 
 Для этого нам нужно воспользоваться https://www.urlencoder.org/ и перекодировать регулярное выражение в разрешенные символы.
 К примеру GET запрос:
-![alt text](https://lh6.googleusercontent.com/ckhiu7kQQWwvNxFW8LW1NDVK9yNMuHUSst55AHTAsif7My1Ju_6VCJ-OJI_VPqyDG-7gCGsa6gzIi5ITiRM3=w1918-h992)
+https://drive.google.com/file/d/1p-VK6ciSrKnUGc-TOAKiXmLvtE6-ffA8/
 
 Должен выглядеть так:
-![alt text](https://lh6.googleusercontent.com/9pPIdMrYL__4ies6WJxt9_tegTcP0iHATISZw7i5aKvjvMfNhri1VsKTlHWDvn68sIrCJkvY3jm2nLY0yUoW=w1918-h992)
+https://drive.google.com/file/d/1oRy-KmUgVuP8u_r_fkjo7SCENHr3Krm7/view?usp=sharing
 
 
